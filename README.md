@@ -4,5 +4,5 @@
  Languages used : HTML5, CSS, JS
 
 Welcome to my introductory page <br>
-Click on the Portfolio to navigate further : [https://rahulchidambaram.github.io/Myportfolio/)https://rahulchidambaram.github.io/Myportfolio/](url)
+Click on the Portfolio to navigate further : [https://rahulchidambaram.github.io/Myportfolio/](url)
  
