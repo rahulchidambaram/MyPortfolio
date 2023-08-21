@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html>
+<head><title>Survey Form</title>
+	<style>
+
+body {
+	background-color: black;	
+	font-family: Verdana;
+	text-align: center;
+	}
+
+
+h1 {
+	color: white;
+	font-style: italic;
+	text-shadow: 3px 4px 11px #c549eb;
+
+}
+
+span {
+	color:#c549eb;
+	}
+
+.form {
+		background-color: white;
+		width: 500px;
+		margin: 50px auto;
+		padding: 30px 30px;
+		box-shadow: 3px 4px 10px #c549eb;
+		border-radius: 70px;
+		}
+
+.form-control {
+		text-align: left;
+		margin-bottom: 35px;
+		}
+
+
+		
+.form-control label {
+		display: block;
+		margin-bottom: 10px;
+		}
+
+.form-control input, .form-control select, .form-control textarea 
+	{
+	border: 2px solid #777;
+	border-radius: 2px;
+	padding: 10px;
+	display: block;
+	width: 95%;
+	}
+
+.form-control input[type="radio"], .form-control input[type="checkbox"] 
+{
+	display: inline-block;
+	width: auto;
+}
+
+
+.sub {
+		background-color: #c549eb;
+		border: 1px solid grey;
+		border-radius: 50px;
+		font-size: 18px;
+		display: block;
+		width: 50%;
+		color: white;
+		font-style: italic;
+		text-shadow: 3px 4px 11px #c549eb;
+		opacity: 0.6;
+		margin: auto;
+		transition: opacity 0.5s;
+	}
+
+.sub:hover {
+		opacity: 1;
+	}
+
+::-webkit-scrollbar {
+	width: 15px;
+}
+
+::-webkit-scrollbar-track {
+	background: #d1e5ff;
+}
+
+::-webkit-scrollbar-thumb {
+	background: linear-gradient(grey, #642bff, #ff22e6);
+	border-radius: 10px;
+}
+
+
+  </style>
+
+<script src="C:\Users\hp\OneDrive\Desktop\HTML Samples\Projects1\Regis form validation using JS.js"> </script>
+
+
+</head>
+
+<body>
+	<h1>My Portal<span> Registration Form</span></h1>
+
+	<form name="myform" class="form" action ="#">
+	    	<div class="form-control success">
+	 		<label>Name</label>
+			<input type="text" name="name" placeholder="Enter your name">
+			
+		</div>
+
+		<div class="form-control error">
+			<label>Email</label>
+			<input type="email" name="email" id="email" placeholder="Enter your email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$">
+			
+		</div>
+
+		<div class="form-control">
+			<label>Age<small>(optional)</small></label>
+		<input type="text" id="age" placeholder="Enter your age"/>
+		</div>
+
+		<div class="form-control">
+		 <label>
+			Which option best describes you? </label>
+			
+		<select name="role" id="role">
+			<option value="student">Student</option>
+			<option value="intern">Intern</option>
+			<option value="professional">Professional</option>
+			<option value="other">Other</option>
+			</select>
+		</div>
+		<div class="form-control">
+			<label>
+				Would you recommend my PORTFOLIO to a friend?
+			</label>
+
+		<label>
+			<input type="radio" id="recommed-1" name="recommed">Yes</input>
+			</label>
+		<label>
+			<input type="radio" id="recommed-2" name="recommed">No</input>
+			</label>
+		<label>
+			<input type="radio" id="recommed-3" name="recommed">Maybe</input>
+			</label>
+			
+		</div>
+
+		<div class="form-control">
+			<label>Languages and Frameworks known
+				<small>(Check all that apply)</small>
+			</label>
+
+			<label for="inp-1">
+			<input type="checkbox" name="inp" id="inp-1">C</input></label>
+			<label for="inp-2">
+				<input type="checkbox" name="inp" id="inp-2">C++</input></label>
+			<label for="inp-3">
+				<input type="checkbox" name="inp" id="inp-3">C#</input></label>
+			<label for="inp-4">
+			 	<input type="checkbox" name="inp" id="inp-4">Java</input></label>
+			<label for="inp-5">
+				<input type="checkbox" name="inp" id="inp-5">Python</input></label>
+			<label for="inp-6">
+				<input type="checkbox" name="inp" id="inp-6">JavaScript</input></label>
+			<label for="inp-7">
+				<input type="checkbox" name="inp" id="inp-7">React</input></label>
+			<label for="inp-8">
+				<input type="checkbox" name="inp" id="inp-8">Angular</input></label>
+			<label for="inp-9">
+				<input type="checkbox" name="inp" id="inp-9">Django</input></label>
+
+		</div>
+
+		<div class="form-control">
+			<label>
+				Any comments or suggestions
+			</label>
+
+			<textarea placeholder="Enter your comment here"></textarea>
+		</div>
+
+      <input type="submit" class="sub" onclick="validateform()">
+
+
+</form>
+
+
+</body>
+
+</html>
