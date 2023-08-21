@@ -38,7 +38,7 @@
 
 
 .front {
-	background: url('C:/Users/hp/OneDrive/Desktop/HTML Samples/Profile Card/Pics/IMG20230119122916.jpg');
+	background: url('./Pics/IMG20230119122916.jpg');
 	background-size: cover;
 	background-position: center;
 	padding: 60px 40px;	
